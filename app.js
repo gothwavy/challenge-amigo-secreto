@@ -1,4 +1,4 @@
-// Criando array para armazenar os nomes dos participantes.
+// Criando o array para armazenar os nomes dos participantes.
 amigosSorteio = [];
 
 // Função para adicionar amigos a lista.
@@ -28,7 +28,32 @@ function atualizarAmigo() {
   // Loop para criar os elementos "li" e inserir todos os nomes existentes no array na lista.
   for (let i = 0; i < amigosSorteio.length; i++) {
     let li = document.createElement(`li`);
-    li.textContent = amigosSorteio[i];
+    li.textContent = `${i+1}º ${amigosSorteio[i]}`;
     ul.appendChild(li);
+  }
+}
+
+function sortearAmigo() {
+  // Selecionando a lista do resultado.
+  let ul = document.getElementById(`resultado`);
+  // Verificando se a lista de amigos esta vazia.
+  if (amigosSorteio.length == 0) {
+    // Esvaziando a lista para apagar o nome do sorteado, caso o botao seja clicado sem que haja alguem na lista.
+    ul.innerHTML = ``;
+    alert(`Por favor, adicione algum amigo na lista.`);
+  }
+  else {
+    // Sorteando qual sera o amigo escolhido.
+    let numeroAmigoSorteado = parseInt(Math.random() * amigosSorteio.length);
+    // Esvaziando a lista para evitar duplicatas.
+    ul.innerHTML = ``;
+    // Criando o elemento "li" e inserindo o nome do amigo sorteado na lista de sorteados.
+    let li = document.createElement(`li`);
+    li.textContent = amigosSorteio[numeroAmigoSorteado];
+    ul.appendChild(li);
+    // Removendo amigo da lista.
+    amigosSorteio.splice(numeroAmigoSorteado, 1);
+    // Atualizando a antiga lista.
+    atualizarAmigo();
   }
 }
