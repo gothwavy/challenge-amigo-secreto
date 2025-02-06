@@ -1,6 +1,6 @@
-# 🎉 Amigo Secreto Web
+# 🎉 Challenge Amigo Secreto
 
-Bem-vindo ao Amigo Secreto Web, uma aplicação interativa para organizar e gerenciar sorteios de amigo secreto de forma prática e divertida! 🏆🎁
+Bem-vindo ao Challenge Amigo Secreto, uma aplicação interativa para organizar e gerenciar sorteios de amigo secreto de forma prática e divertida! 🏆🎁
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -20,11 +20,11 @@ HTML, CSS, JavaScript 💯
 
 Clone este repositório: <br>
 ```
-git clone https://github.com/seu-usuario/amigo-secreto-web.git
+git clone git@github.com:gothwavy/challenge-amigo-secreto.git
 ```
 Acesse a pasta do projeto: <br>
 ```
-cd projeto-amigo-secreto 
+cd challenge-amigo-secreto 
 ```
 
 Execute a aplicação: <br>
