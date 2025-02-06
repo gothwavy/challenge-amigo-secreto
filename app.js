@@ -28,7 +28,7 @@ function atualizarAmigo() {
   // Loop para criar os elementos "li" e inserir todos os nomes existentes no array na lista.
   for (let i = 0; i < amigosSorteio.length; i++) {
     let li = document.createElement(`li`);
-    li.textContent = `${i+1}º ${amigosSorteio[i]}`;
+    li.textContent = `${i + 1}º ${amigosSorteio[i]}`;
     ul.appendChild(li);
   }
 }
