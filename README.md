@@ -31,9 +31,9 @@ Execute a aplicação: <br>
 
 Abra o index.html no seu navegador.
 
-## 🎨 Layout
+## 🎨 Design
 
-(Em construção...)
+<img src="/assets/image.png">
 
 ## 🤝 Contribuindo
 
