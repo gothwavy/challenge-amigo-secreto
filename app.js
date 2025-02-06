@@ -19,7 +19,7 @@ function adicionarAmigo() {
   entradaUsuario.value = ``;
 }
 
-// Função para atualizar a lista.
+// Função para atualizar a lista de amigos.
 function atualizarAmigo() {
   // Selecionando a lista.
   let ul = document.getElementById(`listaAmigos`);
@@ -33,6 +33,7 @@ function atualizarAmigo() {
   }
 }
 
+// Funcao para sortear os amigos.
 function sortearAmigo() {
   // Selecionando a lista do resultado.
   let ul = document.getElementById(`resultado`);
